@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Logs / outputs
+logs/
+model/
+
+# Data (обычно не коммитят)
+data/raw/
+data/preprocessed/
