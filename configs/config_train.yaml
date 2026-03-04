@@ -1,0 +1,18 @@
+max_seq_length: 2800
+max_steps: 3000
+batch_size: 16
+lr: 1e-5
+warmup_steps: 100
+gradient_accumulation_steps: 1
+eval_step_size: 100
+seed: 3407
+logging_steps: 100
+save_steps: 100
+eval_steps: 100
+weight_decay: 0.01
+#lora
+r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+base_model: "unsloth/Qwen2.5-0.5B-bnb-4bit"

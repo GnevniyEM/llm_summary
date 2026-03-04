@@ -1,0 +1,8 @@
+BASE_MODEL: "unsloth/Qwen2.5-0.5B-bnb-4bit"
+LORA_DIR: "model/checkpoint-3000" #выбери тот чекпоинт, на котором хочешь тестить
+DATA_FILE: "data/preprocessed/gazeta_test.jsonl"
+
+N_TEST: 1000
+BATCH: 8
+MAX_NEW: 170
+max_seq_length: 2800
