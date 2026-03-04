@@ -15,7 +15,3 @@ model/
 # Data (обычно не коммитят)
 data/raw/
 data/preprocessed/
-
-# Артефакты/картинки результатов (если не хочешь хранить в репо)
-*.png
-results.txt

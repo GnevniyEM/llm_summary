@@ -1,0 +1,51 @@
+Baseline: 
+    ROUGE-1: 0.1779
+    ROUGE-2: 0.0610
+    ROUGE-L: 0.1730
+
+qwen1.5b: до и после одинаковый +-  - модель сложная слишком
+    ROUGE={'rouge1': np.float64(0.1939829067990833),
+    'rouge2': np.float64(0.06506984126984125),
+    'rougeL': np.float64(0.18962615440115443),
+    'rougeLsum': np.float64(0.18789115312791793)}
+
+    ROUGE={'rouge1': np.float64(0.1963308972073679), 
+    'rouge2': np.float64(0.06507222222222223), 
+    'rougeL': np.float64(0.18838232323232326), 
+    'rougeLsum': np.float64(0.18878387021475257)}
+
+
+   qwen0.6b: - ваще провал
+    lora
+        {'rouge1': np.float64(0.05405676567584465),
+        'rouge2': np.float64(0.01340249554367201),
+        'rougeL': np.float64(0.05296404399693877),
+        'rougeLsum': np.float64(0.05272920040485832)}
+    base:
+        {'rouge1': np.float64(0.0545510160594556), 
+        'rouge2': np.float64(0.015057983445683988), 
+        'rougeL': np.float64(0.052543655277243376), 
+        'rougeLsum': np.float64(0.052684038252709335)}
+
+    qwen 0.5
+    lora 1600 шагов
+        тест 200
+            лора :
+            {'rouge1': np.float64(0.1760587121212121), 'rouge2': np.float64(0.04848214285714285), 'rougeL': np.float64(0.170744227994228), 'rougeLsum': np.float64(0.17074558080808078)}
+
+            базовая :
+            {'rouge1': np.float64(0.19649694464032696), 'rouge2': np.float64(0.0541547619047619), 'rougeL': np.float64(0.19100869677707905), 'rougeLsum': np.float64(0.1896914445848269)}
+        тест 2000
+            лора :
+                {'rouge1': np.float64(0.20324058880697338), 'rouge2': np.float64(0.05840883838383841), 'rougeL': np.float64(0.1959991511800575), 'rougeLsum': np.float64(0.19630899052283346)}
+
+            базовая :
+                {'rouge1': np.float64(0.2162909510371362), 'rouge2': np.float64(0.06748938691489981), 'rougeL': np.float64(0.2079562181577302), 'rougeLsum': np.float64(0.20743165261816365)}
+
+
+Lora 3000 шагов 0.8 эпох
+1000 n test
+3000 - {'rouge1': np.float64(0.20876327300150835), 'rouge2': np.float64(0.06779690587190584), 'rougeL': np.float64(0.2040248189718779), 'rougeLsum': np.float64(0.20387406874171585)}
+2500 - {'rouge1': np.float64(0.21365385489049182), 'rouge2': np.float64(0.06955909391605983), 'rougeL': np.float64(0.20820628038971717), 'rougeLsum': np.float64(0.20830356755051554)}
+2100 - 'rouge1': np.float64(0.21119730114656607), 'rouge2': np.float64(0.06732199437988909), 'rougeL': np.float64(0.2056106916776036), 'rougeLsum': np.float64(0.2051934733567088)}
+base - {'rouge1': np.float64(0.2312423995189274), 'rouge2': np.float64(0.08068603568450117), 'rougeL': np.float64(0.22343470345644717), 'rougeLsum': np.float64(0.2228051295964889)}
